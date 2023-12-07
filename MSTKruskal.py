@@ -27,7 +27,7 @@ def MSTKruskal(vertex, adj): #매개변수 : 정점리스트, 인접행렬
     init_set(vsize)          #정점 집합 초기화
     eList = []               #간선 리스트
 
-    for i in ragne(vsize-1) :         
+    for i in range(vsize-1) :         
         for j in range(i+1, vsize) :
             if adj[i][j] != None :
                 eList.append((i,j,adj[i][j]))
